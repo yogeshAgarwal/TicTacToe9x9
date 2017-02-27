@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context="com.androidmonk.tictactoe9x9.MainActivity">
+
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="Game Status"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="3dp"
+                />
+
+            <ScrollView
+                android:id="@+id/svGameBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvInfo"
+                android:scrollbars="none"
+                >
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <TableLayout
+                        android:id="@+id/tlGameBoard"
+                        android:layout_marginLeft="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black"
+                        android:layout_centerHorizontal="true"
+                        android:rowCount="3"
+                        android:columnCount="3"
+                        >
+
+
+                        <TableRow>
+                            <TableLayout
+                                android:id="@+id/tl00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/black"
+                                android:rowCount="3"
+                                android:columnCount="3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/tvInfo"
+                                android:layout_margin="3dp"
+                                >
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b0000"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0001"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0002"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b0010"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0011"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0012"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b0020"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0021"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0022"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                            </TableLayout>
+                            <TableLayout
+                                android:id="@+id/tl01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/black"
+                                android:rowCount="3"
+                                android:columnCount="3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/tvInfo"
+                                android:layout_margin="3dp"
+                                >
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b0100"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0101"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0102"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b0110"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0111"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0112"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b0120"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0121"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0122"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                            </TableLayout>
+                            <TableLayout
+                                android:id="@+id/tl02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/black"
+                                android:rowCount="3"
+                                android:columnCount="3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/tvInfo"
+                                android:layout_margin="3dp"
+                                >
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b0200"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0201"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0202"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b0210"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0211"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0212"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b0220"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0221"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b0222"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                            </TableLayout>
+                        </TableRow>
+
+
+                        <TableRow>
+                            <TableLayout
+                                android:id="@+id/tl10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/black"
+                                android:rowCount="3"
+                                android:columnCount="3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/tvInfo"
+                                android:layout_margin="3dp"
+                                >
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b1000"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1001"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1002"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b1010"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1011"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1012"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b1020"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1021"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1022"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                            </TableLayout>
+                            <TableLayout
+                                android:id="@+id/tl11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/black"
+                                android:rowCount="3"
+                                android:columnCount="3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/tvInfo"
+                                android:layout_margin="3dp"
+                                >
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b1100"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1101"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1102"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b1110"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1111"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1112"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b1120"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1121"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1122"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                            </TableLayout>
+                            <TableLayout
+                                android:id="@+id/tl12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/black"
+                                android:rowCount="3"
+                                android:columnCount="3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/tvInfo"
+                                android:layout_margin="3dp"
+                                >
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b1200"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1201"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1202"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b1210"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1211"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1212"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b1220"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1221"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b1222"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                            </TableLayout>
+                        </TableRow>
+
+
+                        <TableRow>
+                            <TableLayout
+                                android:id="@+id/tl20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/black"
+                                android:rowCount="3"
+                                android:columnCount="3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/tvInfo"
+                                android:layout_margin="3dp"
+                                >
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b2000"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2001"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2002"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b2010"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2011"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2012"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b2020"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2021"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2022"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                            </TableLayout>
+                            <TableLayout
+                                android:id="@+id/tl21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/black"
+                                android:rowCount="3"
+                                android:columnCount="3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/tvInfo"
+                                android:layout_margin="3dp"
+                                >
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b2100"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2101"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2102"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b2110"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2111"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2112"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b2120"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2121"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2122"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                            </TableLayout>
+                            <TableLayout
+                                android:id="@+id/tl22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/black"
+                                android:rowCount="3"
+                                android:columnCount="3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/tvInfo"
+                                android:layout_margin="3dp"
+                                >
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b2200"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2201"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2202"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b2210"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2211"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2212"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <ImageButton
+                                        android:id="@+id/b2220"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2221"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/b2222"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/white"
+                                        android:textColor="@color/white"
+                                        android:background="@color/cream"
+                                        android:layout_margin="2dp"
+                                        android:gravity="center"
+
+                                        />
+
+                                </TableRow>
+
+                            </TableLayout>
+                        </TableRow>
+
+
+                    </TableLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/bReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESET"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="18dp"
+                android:layout_alignBaseline="@+id/bUndo"
+                android:layout_alignBottom="@+id/bUndo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+            <Button
+                android:id="@+id/bUndo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNDO"
+                android:textSize="18sp"
+                android:layout_below="@id/svGameBoard"
+                android:layout_toRightOf="@id/bReset"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/bUndo"
+                android:layout_below="@id/svGameBoard"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvPlayer1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Player 1"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="22sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/red"
+                            />
+                        <TextView
+                            android:id="@+id/tvPlayer2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Player 2"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="22sp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:id="@+id/tvColor1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/red"
+                            android:text="  0  "
+                            android:textSize="15sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:id="@+id/tvColor2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_marginTop="10dp"
+                            android:text="  0  "
+                            android:textSize="15sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </HorizontalScrollView>
+</ScrollView>
